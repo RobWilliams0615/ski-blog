@@ -1,6 +1,6 @@
 const express = require('express');
 const db = require('./db');
-// const logger = require('morgan');
+const logger = require('morgan');
 const bodyParser = require('body-parser');
 // const cors = require('cors');
 // const controller = require('./controllers/Controller.js');
@@ -12,7 +12,7 @@ const app = express();
 
 // app.use(cors());
 app.use(bodyParser.json());
-// app.use(logger('dev'));
+app.use(logger('dev'));
 
 app.use('/api', routes);
 
