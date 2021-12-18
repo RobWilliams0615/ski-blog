@@ -1,0 +1,24 @@
+{
+  "name": "ski-blog",
+  "version": "1.0.0",
+  "description": "## Date: 12/15/2021",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobWilliams0615/ski-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RobWilliams0615/ski-blog/issues"
+  },
+  "homepage": "https://github.com/RobWilliams0615/ski-blog#readme",
+  "dependencies": {
+    "mongoose": "^6.1.2"
+  }
+}
