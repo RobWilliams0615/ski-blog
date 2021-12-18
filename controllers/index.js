@@ -2,7 +2,7 @@ const Trail = require('../models/trail');
 
 const getAllTrails = async (req, res) => {
   try {
-    const Trails = await Trail.find();
+    const trails = await Trail.find();
     return res.status(200).json({ trails });
   } catch (error) {
     return res.status(500).send(error.message);
@@ -31,7 +31,7 @@ const updateTrail = async (req, res) => {
       if (!trail) {
         res.status(500).send('Trail not found');
       }
-      return rest.status(200).json(trail);
+      return res.status(200).json(trail);
     });
   } catch (error) {
     return res.status(500).send(error.message);
