@@ -21,18 +21,23 @@ const createTrail = async (req, res) => {
   }
 };
 
-const updateTrail = async (req, res) => {
+const updateTrail = async (req, res, next) => {
   try {
     const { id } = req.params;
-    await Trail.findByIdAndUpdate(id, req.body, { new: true }, (err, trail) => {
-      if (err) {
-        res.status(500).send(err);
+    await Trail.findByIdAndUpdate(
+      req.params.id,
+      req.body,
+      { new: true },
+      (err, trail) => {
+        if (err) {
+          res.status(500).send(err);
+        }
+        if (!trail) {
+          res.status(500).send('Trail not found');
+        }
+        return res.status(200).json(trail);
       }
-      if (!trail) {
-        res.status(500).send('Trail not found');
-      }
-      return res.status(200).json(trail);
-    });
+    );
   } catch (error) {
     return res.status(500).send(error.message);
   }

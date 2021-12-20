@@ -1,6 +1,12 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 const Result = (props) => {
+function deletePost () {
+    console.log('Post deleted')
+}
+
+
+
 
     return(
         <div>
@@ -10,7 +16,9 @@ const Result = (props) => {
                 <img src={props.image} alt={props.name} />
                 <p>Location: {props.area}</p>
                 <p>Difficulty: {props.difficulty}</p>
-                <p>About: {props.details}</p><button>Update Post</button><button>Delete Post</button>
+                <p>About: {props.details}</p>
+                <Link to ='/update'><button>Update Post</button> </Link>
+                <button onClick={deletePost}>Delete Post</button>
 
             </div>
         </div>
