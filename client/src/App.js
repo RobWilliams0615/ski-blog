@@ -15,7 +15,7 @@ function App(props) {
       <div className="main">
         <h1>Welcome to the Ski-Blog</h1>
 
-        <Route path="/" component={Home} />
+        <Route exact path="/" component={Home} />
         <Route exact path="/trailform" component={FormInput} />
         <Route exact path="/result" component={Result} />
       </div>

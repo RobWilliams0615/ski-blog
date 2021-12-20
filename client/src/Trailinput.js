@@ -15,7 +15,7 @@ const FormInput = (props) => {
   });
 
   const allTrails = async () => {
-    const res = await axios.post(`${BASE_URL}/createtrails, newTrail`);
+    const res = await axios.post(`${BASE_URL}/createtrails`, newTrail);
     setData(res.data.trails);
     console.log(data);
   };
@@ -89,6 +89,7 @@ const FormInput = (props) => {
           placeholder={'descirption'}
         />
         <button>Create Post</button>
+        <button>Update Post</button>
       </form>
     </div>
   );
