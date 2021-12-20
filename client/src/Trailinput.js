@@ -89,7 +89,6 @@ const FormInput = (props) => {
           placeholder={'descirption'}
         />
         <button>Create Post</button>
-        <button>Update Post</button>
       </form>
     </div>
   );
