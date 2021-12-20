@@ -1,0 +1,44 @@
+* {
+  font-family: 'Righteous', cursive;
+}
+
+.App {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+img {
+  height: 266px;
+  width: 474px;
+  border-radius: 15px;
+}
+a {
+  text-decoration: none;
+  padding: 15px;
+  color: white;
+
+  font-weight: 900;
+}
+
+.nav-bar {
+  margin-bottom: 3%;
+  background-color: black;
+  padding: 5px;
+}
+h1 {
+  color: rgb(249, 6, 228);
+}
+h2 {
+  color: black;
+}
+body {
+  background-color: lightblue;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import Result from './components/Result';
 
 const BASE_URL = 'http://localhost:3001/api';
 
@@ -32,23 +33,21 @@ const Home = (props) => {
 
   return (
     <div>
-      <h2>
-        <div>
-          <h1>Trails</h1>
-          <section className="grid">
-            {trails.map((e) => (
-              <Result
-                banana={skiTrails}
-                key={e.name}
-                name={e.name}
-                image={e.image}
-                {...e}
-                onClick={() => props.history.push(`/trail/${e._id}`)}
-              />
-            ))}
-          </section>
-        </div>
-      </h2>
+      <div>
+        <h1>Trails</h1>
+        <section className="grid">
+          {trails.map((e) => (
+            <Result
+              banana={skiTrails}
+              key={e.name}
+              name={e.name}
+              image={e.image}
+              {...e}
+              onClick={() => props.history.push(`/trail/${e._id}`)}
+            />
+          ))}
+        </section>
+      </div>
     </div>
   );
 };

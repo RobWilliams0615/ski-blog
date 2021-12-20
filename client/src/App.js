@@ -1,16 +1,22 @@
 import './App.css';
-import { Route, Switch } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Home from './Home';
 import NavBar from './NavBar';
 import React, { useState } from 'react';
+import Result from './components/Result';
 
 function App(props) {
   return (
     <div className="App">
       <header className="App-header">
         <NavBar />
-        <Route exact path="/" component={Home} />
       </header>
+      <div className="main">
+        <h1>Hello</h1>
+
+        <Route path="/" component={Home} />
+        <Route exact path="/result" component={Result} />
+      </div>
     </div>
   );
 }
