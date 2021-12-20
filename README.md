@@ -65,4 +65,8 @@
 
 #### Markdown Cheatsheet: [GitHub](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
+#### Seed Data: [WIKI](https://en.wikipedia.org/wiki/Main_Page)
+
+#### Seed Data: [YellowScene](https://yellowscene.com/2020/12/01/beyond-the-ikonic-and-the-epic-a-guide-to-colorados-backcountry/)
+
 ---
