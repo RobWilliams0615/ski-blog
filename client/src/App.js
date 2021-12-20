@@ -4,6 +4,7 @@ import Home from './Home';
 import NavBar from './NavBar';
 import React, { useState } from 'react';
 import Result from './components/Result';
+import FormInput from './Trailinput';
 
 function App(props) {
   return (
@@ -12,9 +13,10 @@ function App(props) {
         <NavBar />
       </header>
       <div className="main">
-        <h1>Hello</h1>
+        <h1>Welcome to the Ski-Blog</h1>
 
         <Route path="/" component={Home} />
+        <Route exact path="/trailform" component={FormInput} />
         <Route exact path="/result" component={Result} />
       </div>
     </div>

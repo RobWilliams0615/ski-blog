@@ -6,6 +6,7 @@ const NavBar = () => {
     <div>
       <nav className="nav-bar">
         <Link to="/">Home</Link>
+        <Link to="/trailform">Trail Input</Link>
       </nav>
     </div>
   );

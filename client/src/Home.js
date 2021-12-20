@@ -34,7 +34,7 @@ const Home = (props) => {
   return (
     <div>
       <div>
-        <h1>Trails</h1>
+        <h2>Trails</h2>
         <section className="grid">
           {trails.map((e) => (
             <Result
@@ -42,6 +42,9 @@ const Home = (props) => {
               key={e.name}
               name={e.name}
               image={e.image}
+              area={e.area}
+              difficulty={e.difficulty}
+              details={e.details}
               {...e}
               onClick={() => props.history.push(`/trail/${e._id}`)}
             />
