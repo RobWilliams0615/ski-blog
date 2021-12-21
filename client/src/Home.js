@@ -46,7 +46,7 @@ const Home = (props) => {
               difficulty={e.difficulty}
               details={e.details}
               {...e}
-              onClick={() => props.history.push(`/trail/${e._id}`)}
+              // onClick={() => props.history.push(`/trail/${e._id}`)}
             />
           ))}
         </section>

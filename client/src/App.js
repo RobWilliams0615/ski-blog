@@ -5,6 +5,7 @@ import NavBar from './NavBar';
 import React, { useState } from 'react';
 import Result from './components/Result';
 import FormInput from './Trailinput';
+import Update from './components/Update';
 
 function App(props) {
   return (
@@ -17,6 +18,7 @@ function App(props) {
 
         <Route exact path="/" component={Home} />
         <Route exact path="/trailform" component={FormInput} />
+        <Route exact path="/updatetrails" component={Update} />
         <Route exact path="/result" component={Result} />
       </div>
     </div>

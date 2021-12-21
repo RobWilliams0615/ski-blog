@@ -1,9 +1,9 @@
-import React from 'React';
+import React, { useState, useEffect } from 'react';
 import TrailArray from '../data/trails'
 import axios from 'axios'
 const BASE_URL = 'http://localhost:3001/api'
 
-const FormInput = (props) => {
+const Update = (props) => {
   const [data, setData] = useState(TrailArray);
   const [Trails, setTrail] = useState(data);
   const [updatedTrail, setUpdatedTrail] = useState({
