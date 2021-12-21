@@ -15,9 +15,9 @@ const Update = (props) => {
   });
 
   const updateTrails = async () => {
-    const res = await axios.post(`${BASE_URL}/updatetrails`, updatedTrail);
+    const res = await axios.put(`${BASE_URL}/updatetrails/61be4f9b46830170053c059b`, updatedTrail);
     setData(res.data.trails);
-    console.log(data);
+    console.log(res.data);
   };
 
   const updateTrail = (e) => {
@@ -44,6 +44,7 @@ const handleChange = (e) => {
 const formSubmit = (e) => {
   updateTrail(e);
   updateTrails();
+  console.log(e)
 
   console.log(updatedTrail);
 };

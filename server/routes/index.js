@@ -6,6 +6,7 @@ router.get('/', (req, res) => res.send('This is root!'));
 router.get('/getalltrails', controller.getAllTrails);
 router.post('/createtrails', controller.createTrail);
 router.put('/updatetrails/:id', controller.updateTrail);
-router.delete('/deletetrails/:id', controller.deleteTrail);
+router.delete('/getalltrails/:id', controller.deleteTrail);
+router.get('/getalltrails/:id', controller.getTrailById);
 
 module.exports = router;

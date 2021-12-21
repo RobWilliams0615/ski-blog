@@ -21,25 +21,34 @@ const createTrail = async (req, res) => {
   }
 };
 
+const getTrailById = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const trail = await Trail.findById(id);
+    if (trail) {
+      return res.status(200).json({ trail });
+    }
+    return res.status(404).send('This trail does not exist');
+  } catch (error) {
+    return res.status(500).send(error.message);
+  }
+};
+
 const updateTrail = async (req, res, next) => {
   try {
     const { id } = req.params;
-    await Trail.findByIdAndUpdate(
-      req.params.id,
-      req.body,
-      { new: true },
-      (err, trail) => {
-        if (err) {
-          res.status(500).send(err);
-        }
-        if (!trail) {
-          res.status(500).send('Trail not found');
-        }
-        return res.status(200).json(trail);
+    await Trail.findByIdAndUpdate(id, req.body, { new: true }, (err, trail) => {
+      if (err) {
+        res.status(500).send(err);
       }
-    );
+      if (!trail) {
+        res.status(500).send('Trail not found');
+      }
+      return res.status(200).json(trail);
+    });
   } catch (error) {
-    return res.status(500).send(error.message);
+    console.log(error.message);
+    return res.status(500);
   }
 };
 
@@ -60,5 +69,6 @@ module.exports = {
   getAllTrails,
   createTrail,
   updateTrail,
-  deleteTrail
+  deleteTrail,
+  getTrailById
 };

@@ -5,6 +5,8 @@ import Result from './components/Result';
 const BASE_URL = 'http://localhost:3001/api';
 
 const Home = (props) => {
+  const [clicker, setClicker] = useState(0);
+  const [currentTrail, setCurrentTrail] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
   const [searched, toggleSearched] = useState(false);
 
@@ -39,14 +41,15 @@ const Home = (props) => {
           {trails.map((e) => (
             <Result
               banana={skiTrails}
+              setCurrentTrail={setCurrentTrail}
               key={e.name}
+              clicker={clicker}
               name={e.name}
               image={e.image}
               area={e.area}
               difficulty={e.difficulty}
               details={e.details}
               {...e}
-              // onClick={() => props.history.push(`/trail/${e._id}`)}
             />
           ))}
         </section>

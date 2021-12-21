@@ -1,13 +1,22 @@
-import React from 'react'
+import axios from 'axios';
+import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom';
-const Result = (props) => {
-function deletePost () {
-    console.log('Post deleted')
+
+
+
+
+function Result(props) {
+const [rem,setRem] = useState()
+async function deletePost (id) {
+    await axios.delete(`http://localhost:3001/api/delete/${id}`)
+    setRem('Trail Removed')
+    window.location.reload()
 }
-
-
-
-
+useEffect(()=> {
+    props.setCurrentTrail(props._id)
+},
+[props.clicker]
+)
     return(
         <div>
             
@@ -18,12 +27,12 @@ function deletePost () {
                 <p>Difficulty: {props.difficulty}</p>
                 <p>About: {props.details}</p>
                 <Link to ='/updatetrails'><button>Update Post</button> </Link>
-                <button onClick={deletePost}>Delete Post</button>
+                <button onClick={()=> {deletePost(props._id)}}>Delete Post</button>
 
             </div>
         </div>
     )
 }
 
-export default Result
+export default Result;
     
