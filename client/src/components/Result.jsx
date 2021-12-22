@@ -22,10 +22,20 @@ useEffect(()=> {
 },
 [props.clicker]
 )
-    return(
-        <div>
-            
-            <div onClick={props.onClick}>
+    
+const checkData = () => {
+    if (props.ispost === true) {
+        return (
+        <div onClick={props.onClick}>
+                <h2>{props.username}</h2>
+                <p>Postinfo: {props.postinfo}</p>
+                <p>Rating: {props.rating}</p>
+                <Link to ={`/updatetrails/${props._id}`}><button>Update Post</button> </Link>
+                <button onClick={()=> {deletePost(props._id)}}>Delete Post</button>
+            </div> )
+    } else {
+        return (
+        <div onClick={props.onClick}>
                 <h2>{props.name}</h2>
                 <img src={props.image} alt={props.name} />
                 <p>Location: {props.area}</p>
@@ -33,8 +43,14 @@ useEffect(()=> {
                 <p>About: {props.details}</p>
                 <Link to ={`/updatetrails/${props._id}`}><button>Update Post</button> </Link>
                 <button onClick={()=> {deletePost(props._id)}}>Delete Post</button>
+            </div> )
+    }
+}
 
-            </div>
+
+return(
+        <div>
+            {checkData()}
         </div>
     )
 }
