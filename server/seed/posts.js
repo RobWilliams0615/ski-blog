@@ -22,7 +22,7 @@ const main = async () => {
     }
   ];
   await Post.insertMany(posts);
-  consolelog('Created some Posts!');
+  console.log('Created some Posts!');
 };
 
 const run = async () => {

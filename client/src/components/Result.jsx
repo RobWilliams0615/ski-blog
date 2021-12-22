@@ -13,8 +13,12 @@ async function deletePost (id) {
     window.location.reload()
 }
 useEffect(()=> {
-    props.setCurrentTrail(props._id)
-    props.setCurrentPost(props._id)
+    console.log(props)
+    if (props.ispost === true) {
+        props.setCurrentPost(props._id)
+    } else {
+        props.setCurrentTrail(props._id)
+    }
 },
 [props.clicker]
 )

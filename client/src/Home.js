@@ -52,7 +52,7 @@ const Home = (props) => {
             <Result
               listedtrails={skiTrails}
               setCurrentTrail={setCurrentTrail}
-              setCurrentPost={setCurrentPost}
+              ispost={false}
               key={index}
               clicker={clicker}
               name={e.name}
@@ -60,6 +60,16 @@ const Home = (props) => {
               area={e.area}
               difficulty={e.difficulty}
               details={e.details}
+              {...e}
+            />
+          ))}
+          {posts.map((e, index) => (
+            <Result
+              listedposts={userPosts}
+              setCurrentPost={setCurrentPost}
+              ispost={true}
+              key={index}
+              clicker={clicker}
               username={e.username}
               postinfo={e.postinfo}
               rating={e.rating}
