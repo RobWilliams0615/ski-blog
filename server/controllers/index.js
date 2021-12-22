@@ -76,11 +76,24 @@ const getAllPosts = async (req, res) => {
     return res.status(500).send(error.message);
   }
 };
+
+const createPost = async (req, res) => {
+  console.log(req.body);
+  try {
+    const post = await Post.create(req.body);
+    console.log(trail);
+    await post.save();
+    return res.status(201).json({ post });
+  } catch (error) {
+    return res.status(500).json({ error: error.message });
+  }
+};
 module.exports = {
   getAllTrails,
   createTrail,
   updateTrail,
   deleteTrail,
   getTrailById,
-  getAllPosts
+  getAllPosts,
+  createPost
 };
