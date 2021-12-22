@@ -8,5 +8,6 @@ router.post('/createtrails', controller.createTrail);
 router.put('/updatetrails/:id', controller.updateTrail);
 router.delete('/getalltrails/:id', controller.deleteTrail);
 router.get('/getalltrails/:id', controller.getTrailById);
+router.get('/getallposts', controller.getAllPosts);
 
 module.exports = router;
