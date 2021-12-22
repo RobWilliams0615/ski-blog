@@ -18,7 +18,7 @@ function App(props) {
 
         <Route exact path="/" component={Home} />
         <Route exact path="/trailform" component={FormInput} />
-        <Route exact path="/updatetrails" component={Update} />
+        <Route exact path="/updatetrails/:id" component={Update} />
         <Route exact path="/result" component={Result} />
       </div>
     </div>

@@ -26,7 +26,7 @@ useEffect(()=> {
                 <p>Location: {props.area}</p>
                 <p>Difficulty: {props.difficulty}</p>
                 <p>About: {props.details}</p>
-                <Link to ='/updatetrails'><button>Update Post</button> </Link>
+                <Link to ={`/updatetrails/${props._id}`}><button>Update Post</button> </Link>
                 <button onClick={()=> {deletePost(props._id)}}>Delete Post</button>
 
             </div>

@@ -39,10 +39,10 @@ const updateTrail = async (req, res, next) => {
     const { id } = req.params;
     await Trail.findByIdAndUpdate(id, req.body, { new: true }, (err, trail) => {
       if (err) {
-        res.status(500).send(err);
+        // res.status(500).send(err);
       }
       if (!trail) {
-        res.status(500).send('Trail not found');
+        // res.status(500).send('Trail not found');
       }
       return res.status(200).json(trail);
     });
