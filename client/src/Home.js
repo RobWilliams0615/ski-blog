@@ -38,11 +38,11 @@ const Home = (props) => {
       <div>
         <h2>Trails</h2>
         <section className="grid">
-          {trails.map((e) => (
+          {trails.map((e, index) => (
             <Result
               banana={skiTrails}
               setCurrentTrail={setCurrentTrail}
-              key={e.name}
+              key={index}
               clicker={clicker}
               name={e.name}
               image={e.image}

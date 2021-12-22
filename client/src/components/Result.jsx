@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 function Result(props) {
 const [rem,setRem] = useState()
 async function deletePost (id) {
-    await axios.delete(`http://localhost:3001/api/delete/${id}`)
+    await axios.delete(`http://localhost:3001/api/getalltrails/${id}`)
     setRem('Trail Removed')
     window.location.reload()
 }
