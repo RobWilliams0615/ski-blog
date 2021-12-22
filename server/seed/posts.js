@@ -7,17 +7,17 @@ const main = async () => {
   const posts = [
     {
       username: 'DukeNukem89',
-      details: 'Really cool image broseph!',
+      postinfo: 'Really cool image broseph!',
       rating: '5'
     },
     {
       username: 'ToddFerguson21',
-      details: 'Powder here is really great',
+      postinfo: 'Powder here is really great',
       rating: '8'
     },
     {
       username: 'TheFowlFlutist',
-      details: 'extereme terrain and no AVY mitigation',
+      postinfo: 'extereme terrain and no AVY mitigation',
       rating: '3'
     }
   ];

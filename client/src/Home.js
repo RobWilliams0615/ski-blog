@@ -7,13 +7,16 @@ const BASE_URL = 'http://localhost:3001/api';
 const Home = (props) => {
   const [clicker, setClicker] = useState(0);
   const [currentTrail, setCurrentTrail] = useState('');
+  const [currentPost, setCurrentPost] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
   const [searched, toggleSearched] = useState(false);
 
   const [trails, setTrails] = useState([]);
+  const [posts, setPosts] = useState([]);
 
   useEffect(() => {
     skiTrails();
+    userPosts();
   }, []);
 
   const skiTrails = async () => {
@@ -21,6 +24,13 @@ const Home = (props) => {
     console.log(res);
     setTrails(res.data.trails);
     console.log(trails);
+  };
+
+  const userPosts = async () => {
+    const res = await axios.get(`${BASE_URL}/getallposts`);
+    console.log(res);
+    setPosts(res.data.posts);
+    console.log(posts);
   };
 
   const handleInput = (e) => {
@@ -40,8 +50,9 @@ const Home = (props) => {
         <section className="grid">
           {trails.map((e, index) => (
             <Result
-              banana={skiTrails}
+              listedtrails={skiTrails}
               setCurrentTrail={setCurrentTrail}
+              setCurrentPost={setCurrentPost}
               key={index}
               clicker={clicker}
               name={e.name}
@@ -49,6 +60,9 @@ const Home = (props) => {
               area={e.area}
               difficulty={e.difficulty}
               details={e.details}
+              username={e.username}
+              postinfo={e.postinfo}
+              rating={e.rating}
               {...e}
             />
           ))}

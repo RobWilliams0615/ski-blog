@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const Post = new Schema(
   {
     username: { type: String, required: true },
-    details: { type: String, required: true },
+    postinfo: { type: String, required: true },
     rating: { type: String, required: true }
   },
   { timestamps: true }

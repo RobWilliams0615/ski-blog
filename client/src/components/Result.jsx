@@ -14,6 +14,7 @@ async function deletePost (id) {
 }
 useEffect(()=> {
     props.setCurrentTrail(props._id)
+    props.setCurrentPost(props._id)
 },
 [props.clicker]
 )
