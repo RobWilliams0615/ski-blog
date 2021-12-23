@@ -27,11 +27,11 @@ const checkData = () => {
     if (props.ispost === true) {
         return (
         <div className="comments"onClick={props.onClick}>
-                <h3>{props.username}</h3>
-                <p>{props.postinfo}</p>
-                <h5>Rating: {props.rating}</h5>
-                <Link to ={`/updatetrails/${props._id}`}><button>Update Post</button> </Link>
-                <button onClick={()=> {deletePost(props._id)}}>Delete Post</button>
+                <h3 className="username">{props.username}</h3>
+                <p className="postdetails">{props.postinfo}</p>
+                <h5 className="rating">Rating: {props.rating}</h5>
+                <Link to ={`/updatetrails/${props._id}`}><button>Update</button> </Link>
+                <button onClick={()=> {deletePost(props._id)}}>Remove</button>
             </div> )
     } else {
         return (

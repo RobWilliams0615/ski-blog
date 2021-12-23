@@ -73,7 +73,7 @@
 }
 .trailtitle {
   font-family: 'Secular One', sans-serif;
-  color: rgb(255, 60, 0);
+  color: rgb(44, 84, 212);
 }
 
 .traildetails {
@@ -93,6 +93,15 @@
   max-width: 25%;
 }
 
+.postdetails {
+  font-family: 'Yaldevi', sans-serif;
+}
+
+.rating {
+  font-family: 'Prosto One', cursive;
+  font-weight: bold;
+  color: rgb(209, 79, 101);
+}
 button {
   background-color: black;
   color: white;
@@ -155,4 +164,8 @@ input {
   background-position: center;
   height: 100vh;
   width: 100vw;
+}
+
+.username {
+  font-family: 'Antic Didone', serif;
 }
