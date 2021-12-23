@@ -29,18 +29,18 @@ const checkData = () => {
         <div onClick={props.onClick}>
                 <h2>{props.username}</h2>
                 <p>Postinfo: {props.postinfo}</p>
-                <p>Rating: {props.rating}</p>
+                <h5>Rating: {props.rating}</h5>
                 <Link to ={`/updatetrails/${props._id}`}><button>Update Post</button> </Link>
                 <button onClick={()=> {deletePost(props._id)}}>Delete Post</button>
             </div> )
     } else {
         return (
         <div onClick={props.onClick}>
-                <h2>{props.name}</h2>
+                <h2 className="trailtitle">{props.name}</h2>
                 <img src={props.image} alt={props.name} />
-                <p>Location: {props.area}</p>
-                <p>Difficulty: {props.difficulty}</p>
-                <p>About: {props.details}</p>
+                <h5 className="location">Location: {props.area}</h5>
+                <h5 className="difficulty">Difficulty: {props.difficulty}</h5>
+                <p className="traildetails">About: {props.details}</p>
                 <Link to ={`/updatetrails/${props._id}`}><button>Update Post</button> </Link>
                 <button onClick={()=> {deletePost(props._id)}}>Delete Post</button>
             </div> )

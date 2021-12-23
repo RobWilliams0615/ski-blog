@@ -46,6 +46,11 @@ const Home = (props) => {
   return (
     <div>
       <div>
+        <h3 className="mainheading">
+          "You know, the mountains are full of dangers, and they swallow you up.
+          But mostly, they give."
+        </h3>
+        <h4>-Doug Coombs</h4>
         <h2>Trails</h2>
         <section className="grid">
           {trails.map((e, index) => (

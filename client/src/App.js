@@ -14,8 +14,6 @@ function App(props) {
         <NavBar />
       </header>
       <div className="main">
-        <h1>Welcome to the Ski-Blog</h1>
-
         <Route exact path="/" component={Home} />
         <Route exact path="/trailform" component={FormInput} />
         <Route exact path="/updatetrails/:id" component={Update} />
