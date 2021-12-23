@@ -43,7 +43,7 @@
 #### PowHound
 
 ![HomePage](https://imgur.com/a/kUBu7hb)
-![AddTrail](https://imgur.com/a/tIXvQ4p)
+![AddTrail](https://imgur.com/a/TbTuiNd)
 ![Comments](https://imgur.com/a/SoH6Atc)
 
 ---
@@ -76,5 +76,7 @@
 #### GAWiki: [GA](https://github.com/SEI-R-11-8/class_wiki)
 
 #### Stack: [Stack](https://stackoverflow.com/)
+
+#### Images: [Imgur](https://imgur.com/)
 
 ---
