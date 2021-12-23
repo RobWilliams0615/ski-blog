@@ -73,6 +73,7 @@
 }
 .trailtitle {
   font-family: 'Secular One', sans-serif;
+  color: rgb(255, 60, 0);
 }
 
 .traildetails {
@@ -85,6 +86,19 @@
 .location,
 .difficulty {
   font-family: 'Varela Round', sans-serif;
+}
+
+.comments {
+  border: 1px solid black;
+  max-width: 25%;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  font-family: 'Ultra', serif;
+  padding: 2px;
 }
 
 .grid {

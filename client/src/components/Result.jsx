@@ -26,9 +26,9 @@ useEffect(()=> {
 const checkData = () => {
     if (props.ispost === true) {
         return (
-        <div onClick={props.onClick}>
-                <h2>{props.username}</h2>
-                <p>Postinfo: {props.postinfo}</p>
+        <div className="comments"onClick={props.onClick}>
+                <h3>{props.username}</h3>
+                <p>{props.postinfo}</p>
                 <h5>Rating: {props.rating}</h5>
                 <Link to ={`/updatetrails/${props._id}`}><button>Update Post</button> </Link>
                 <button onClick={()=> {deletePost(props._id)}}>Delete Post</button>
