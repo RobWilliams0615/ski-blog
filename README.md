@@ -69,4 +69,10 @@
 
 #### Seed Data: [YellowScene](https://yellowscene.com/2020/12/01/beyond-the-ikonic-and-the-epic-a-guide-to-colorados-backcountry/)
 
+#### W3Schools: [W3Schools](https://www.w3schools.com/)
+
+#### GAWiki: [GA](https://github.com/SEI-R-11-8/class_wiki)
+
+#### Stack: [Stack](https://stackoverflow.com/)
+
 ---
