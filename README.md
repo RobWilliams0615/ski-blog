@@ -79,6 +79,8 @@
 
 #### Images: [Imgur](https://imgur.com/)
 
+#### HiResImages: [Unsplash](https://unsplash.com/)
+
 #### Favicon: [Favicon.io](https://favicon.io/)
 
 ---
