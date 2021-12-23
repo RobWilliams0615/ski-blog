@@ -50,8 +50,7 @@ const Home = (props) => {
           "You know, the mountains are full of dangers, and they swallow you up.
           But mostly, they give."
         </h3>
-        <h4>-Doug Coombs</h4>
-        <h2>Trails</h2>
+        <h4 className="author">-Doug Coombs</h4>
         <section className="grid">
           {trails.map((e, index) => (
             <Result

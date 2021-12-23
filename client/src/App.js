@@ -6,6 +6,7 @@ import React, { useState } from 'react';
 import Result from './components/Result';
 import FormInput from './Trailinput';
 import Update from './components/Update';
+import Footer from './Footer';
 
 function App(props) {
   return (
@@ -19,7 +20,9 @@ function App(props) {
         <Route exact path="/updatetrails/:id" component={Update} />
         {/* <Route exact path="/result" component={Result} /> */}
       </div>
-      <footer className="App-footer"></footer>
+      <footer className="App-footer">
+        <Footer />
+      </footer>
     </div>
   );
 }

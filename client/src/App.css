@@ -28,10 +28,24 @@
   margin-bottom: 100px;
 }
 
-.mainheading {
-  font-family: 'Prompt', sans-serif;
+.App-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(1, 5, 44);
+  color: white;
+  text-align: center;
 }
 
+.mainheading {
+  font-family: 'Prompt', sans-serif;
+  color: rgb(223, 96, 96);
+}
+
+.author {
+  margin-bottom: 2%;
+}
 .trailtitle {
   font-family: 'Secular One', sans-serif;
 }
