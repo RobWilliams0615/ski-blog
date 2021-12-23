@@ -13,9 +13,7 @@ const Footer = () => {
           href="https://www.linkedin.com/in/robwilliamsdev"
           className="fa fa-linkedin"
         ></a>
-        <a href="" className="fa fa-instagrame">
-          Instagram
-        </a>
+        <a href="" className="fa fa-instagram"></a>
       </nav>
     </div>
   );

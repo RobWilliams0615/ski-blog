@@ -40,12 +40,27 @@
   height: 30px;
 }
 
-.fa {
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   padding: 25px;
+  background-color: rgb(1, 5, 44);
+  color: white;
+  text-align: center;
+  height: 20px;
+}
+
+.fa {
+  padding: 15px;
   font-size: 15px;
   width: 10px;
   text-align: center;
   text-decoration: none;
+}
+.fa fa-github {
+  text-align: center;
 }
 
 .mainheading {
