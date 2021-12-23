@@ -50,47 +50,49 @@ const FormInput = (props) => {
   };
 
   return (
-    <div>
-      <h1>Add New Trail</h1>
-      <form onSubmit={formSubmit}>
-        <input
-          type="text"
-          value={newTrail.name}
-          onChange={handleChange}
-          name={'name'}
-          placeholder={'Trail Name'}
-        />
-        <input
-          type="text"
-          value={newTrail.img}
-          onChange={handleChange}
-          name={'image'}
-          placeholder={'image'}
-        />
-        <input
-          type="text"
-          value={newTrail.area}
-          onChange={handleChange}
-          name={'area'}
-          placeholder={'Location'}
-        />
-        <input
-          type="text"
-          value={newTrail.difficulty}
-          onChange={handleChange}
-          name={'difficulty'}
-          placeholder={'difficulty'}
-        />
-        <input
-          type="text"
-          value={newTrail.details}
-          onChange={handleChange}
-          name={'details'}
-          placeholder={'descirption'}
-        />
-        <button>Create Post</button>
-      </form>
-    </div>
+    <main>
+      <div className="background">
+        <h1 className="createheader">Add A Trail!</h1>
+        <form className="form" onSubmit={formSubmit}>
+          <input
+            type="text"
+            value={newTrail.name}
+            onChange={handleChange}
+            name={'name'}
+            placeholder={'Trail Name'}
+          />
+          <input
+            type="text"
+            value={newTrail.img}
+            onChange={handleChange}
+            name={'image'}
+            placeholder={'image'}
+          />
+          <input
+            type="text"
+            value={newTrail.area}
+            onChange={handleChange}
+            name={'area'}
+            placeholder={'Location'}
+          />
+          <input
+            type="text"
+            value={newTrail.difficulty}
+            onChange={handleChange}
+            name={'difficulty'}
+            placeholder={'difficulty'}
+          />
+          <input
+            type="text"
+            value={newTrail.details}
+            onChange={handleChange}
+            name={'details'}
+            placeholder={'descirption'}
+          />
+          <button>Create Post</button>
+        </form>
+      </div>
+    </main>
   );
 };
 export default FormInput;

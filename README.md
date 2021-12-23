@@ -40,9 +40,11 @@
 
 ### **_*Ski-blog Screen Shots*_**
 
-#### Ski-blog
+#### PowHound
 
-![Ski Blog]()
+![HomePage](https://imgur.com/a/kUBu7hb)
+![AddTrail](https://imgur.com/a/tIXvQ4p)
+![Comments](https://imgur.com/a/SoH6Atc)
 
 ---
 
