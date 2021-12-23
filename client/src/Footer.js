@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <div>
       <nav className="footer">
-        <Link to="">GitHub</Link>
-        <Link to="">LinkedIn</Link>
+        <a href="https://github.com/RobWilliams0615">GitHub</a>
+        <a href="https://www.linkedin.com/in/robwilliamsdev">LinkedIn</a>
         <Link to="">Instagram</Link>
       </nav>
     </div>
