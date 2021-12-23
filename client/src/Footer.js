@@ -5,9 +5,17 @@ const Footer = () => {
   return (
     <div>
       <nav className="footer">
-        <a href="https://github.com/RobWilliams0615">GitHub</a>
-        <a href="https://www.linkedin.com/in/robwilliamsdev">LinkedIn</a>
-        <Link to="">Instagram</Link>
+        <a
+          href="https://github.com/RobWilliams0615"
+          className="fa fa-github"
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/robwilliamsdev"
+          className="fa fa-linkedin"
+        ></a>
+        <a href="" className="fa fa-instagrame">
+          Instagram
+        </a>
       </nav>
     </div>
   );

@@ -33,9 +33,19 @@
   left: 0;
   bottom: 0;
   width: 100%;
+  padding: 10px;
   background-color: rgb(1, 5, 44);
   color: white;
   text-align: center;
+  height: 30px;
+}
+
+.fa {
+  padding: 25px;
+  font-size: 15px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .mainheading {
